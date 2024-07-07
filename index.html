@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="./assets/logo.png" alt="no image">
+            <h2>Niond</h2>
+        </div>
+        <div class="box1">
+            <ul class="navbar">
+                <li class="navbar-item">
+                    <a class="navbar-link activebar" href="#">
+                        <i class="fas fa-tachometer-alt"></i> Dashboard
+                    </a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="#">
+                        <i class="fas fa-chart-bar"></i> Statistics
+                    </a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="#">
+                        <i class="fas fa-exchange-alt"></i> Transaction
+                    </a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="#">
+                        <i class="fas fa-users"></i> My Team
+                    </a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="#">
+                        <i class="fas fa-chart-line"></i> Sell Reports
+                    </a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="#">
+                        <i class="fas fa-cog"></i> Settings
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="profile-section">
+            <div class="profile">
+                <img src="./assets/team-4 (1).jpg" alt="Profile Image">
+            </div>
+            <div class="profile-info">
+                <h4>Nora Watson</h4>
+                <p>Sales Manager</p>
+            </div>
+        </div>
+        <a class="navbar-link logout" href="#">
+            <i class="fas fa-sign-out-alt"></i> Log Out
+        </a>
+    </div>
+    <div class="content">
+        <div class="header">
+            <div class="header-left">
+                <h2>Dashboard</h2>
+                <p>14th Aug 2023</p>
+            </div>
+            <div class="header-right">
+                <button class="btnbell"><i class="fas fa-comment-dots"></i></button>
+                <button class="btnbell"><i class="fas fa-bell"></i></button>
+                <div class="profile">
+                    <img src="./assets/team-4 (1).jpg" alt="Profile Image">
+                    <div class="profile-info">
+                        <h4>Nora Watson</h4>
+                        <p>Sales Manager</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="maincontent">
+            <div class="carddeck">
+                <div class="cardcontent bglight-purple">
+                    <div class="cardbody">
+                        <div class="topflex">
+                            <div class="iconbg" style="background-color: #9b94be96;"><i class="fas fa-dollar-sign"></i></div>
+                            <h5>Total Earning</h5>
+                        </div>
+                        <p class="cardtext">242.65K</p>
+                        <p class="textpara">From the last 20 days</p>
+                    </div>
+                </div>
+                <div class="cardcontent bglight-blue">
+                    <div class="cardbody">
+                        <div class="topflex">
+                            <div class="iconbg" style="background-color: #9aaac59e;"><i class="fas fa-chart-line"></i></div>
+                            <h5>Average Earning</h5>
+                        </div>
+                        <p class="cardtext">17.347K</p>
+                        <p class="textpara">Daily Earning for this month</p>
+                    </div>
+                </div>
+                <div class="cardcontent bglight-green">
+                    <div class="cardbody">
+                        <div class="topflex">
+                            <div class="iconbg" style="background-color: #8cc5a6ba;"><i class="fas fa-percentage"></i></div>
+                            <h5>Conversion Rate</h5>
+                        </div>
+                        <p class="cardtext">74.86%</p>
+                        <p class="textpara">Increased since last month</p>
+                    </div>
+                </div>
+                <div class="cardcontent bglight-teal widecard">
+                    <div class="cardbody">
+                        <div class="topflex">
+                           
+                            <p style="font-size: larger;">Upgrade to Pro</p>
+                        </div>
+                        <p class="cardtext sampletext" >$4.20 / <span style="font-size: small;">Month</span></p>
+                        <p class="textpara sampletext">$50 Billed Annually</p>
+                        <button class="btn">Upgrade Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container-box1">
+                <div class="chart-container fit-box">
+                    <div class="chartheader">
+                        <h2>Regular Sell</h2>
+                        <button class="chartbtn">Export</button>
+                    </div>
+                    <div class="chart-content">
+                        <div id="chart_div"></div>
+                    </div>
+                </div>
+                <div class="analysis-card fit-box">
+                    <p class="analysis-title">More Analysis</p>
+                    <h4 class="analysis-description">There are more to view</h4>
+                    <div class="analysis-item">
+                       <div style="justify-content: end;" class="iconbg"> <i class="fas fa-chart-bar analysis-icon"></i></div>
+                        <div  class="analysis-text">Store Sell Ratio</div>
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                    <div class="analysis-item">
+                        <div style="justify-content: end;" class="iconbg"><i class="fas fa-star analysis-icon"></i></div>
+                        <div class="analysis-text">Top item sold</div>
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                    <h5 class="analysis-footer">Analysis created by <i class="fas fa-chart-pie analysis-footer-icon"></i></h5>
+                </div>
+                <div class="meeting-card">
+                    <div class="meeting-cardbody">
+                        <div class="meet-topflex">
+                            <div class="iconbg"><i class="fas fa-video"></i></div>
+                            <h4>Daily Meeting</h4>
+                        </div>
+                        <div class="time-details">
+                            <span>12+ Person</span>
+                            <span>8:30 Pm</span>
+                        </div>
+                        <div class="meet-carddescription">
+                            <img src="./assets/testimonials-2.jpg" class="circular-img" alt="User 1">
+                            <img src="./assets/testimonials-3.jpg" class="circular-img" alt="User 2">
+                            <img src="./assets/testimonials-4.jpg" class="circular-img" alt="User 3">
+                            <p style="margin-left: 26px;">They will conduct the meeting</p>
+                        </div>
+                        <button class="meet-btn">Click for meeting link</button>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="container-box2">
+                <main class="storecard-container">
+                    <div class="storecard-header">
+                        <h2>Top Store</h2>
+                        <button class="tablebtn"><i class="fas fa-share"></i> Share</button>
+                    </div>
+                    <table class="storecard-table">
+                        <thead>
+                            <tr>
+                                <th>Store Name</th>
+                                <th>Location</th>
+                                <th>Sell</th>
+                                <th>Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Solaris Sparkle</td>
+                                <td>Miami, Florida</td>
+                                <td>102 Quantity</td>
+                                <td>12.50K</td>
+                            </tr>
+                            <tr>
+                                <td>Crimson Dusk</td>
+                                <td>Denver, Colorado</td>
+                                <td>214 Quantity</td>
+                                <td>07.85K</td>
+                            </tr>
+                            <tr>
+                                <td>Indigo Zephyr</td>
+                                <td>Orlando, Florida</td>
+                                <td>143 Quantity</td>
+                                <td>16.40K</td>
+                            </tr>
+                            <tr>
+                                <td>Rosette Crest</td>
+                                <td>Las Vegas, Nevada</td>
+                                <td>185 Quantity</td>
+                                <td>23.64K</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </main>
+                <div class="membercard">
+                    <h4 class="cardtitle">Team Member</h4>
+                    <div class="member-description">
+                        <div class="memberbar">
+                            <div class="memberimg">
+                                <img src="./assets/testimonials-2.jpg" alt="User 1">
+                            </div>
+                            <div class="member-details">
+                                <p>Mahid Ahmed</p>
+                                <span>Project Manager</span>
+                            </div>
+                            <i class="fa fa-angle-right"></i>
+                        </div>
+                        <div class="memberbar">
+                            <div class="memberimg">
+                                <img src="./assets/testimonials-3.jpg" alt="User 2">
+                            </div>
+                            <div class="member-details">
+                                <p>Daniel Karl</p>
+                                <span>HR Head</span>
+                            </div>
+                            <i class="fa fa-angle-right"></i>
+                        </div>
+                        <div class="memberbar">
+                            <div class="memberimg">
+                                <img src="./assets/testimonials-4.jpg" alt="User 3">
+                            </div>
+                            <div class="member-details">
+                                <p>Elena Michel</p>
+                                <span>Co-ordinator</span>
+                            </div>
+                            <i class="fa fa-angle-right"></i>
+                        </div>
+                        <div class="memberbar">
+                            <div class="memberimg">
+                                <img src="./assets/team-4 (1).jpg" alt="User 4">
+                            </div>
+                            <div class="member-details">
+                                <p>Salina Mitso</p>
+                                <span>Co-ordinator</span>
+                            </div>
+                            <i class="fa fa-angle-right"></i>
+                        </div>
+                    </div>
+                    <button class="card-button">Click for meeting link</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
